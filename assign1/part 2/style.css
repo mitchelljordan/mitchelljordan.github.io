@@ -110,7 +110,7 @@ nav a, nav span {
 /* || main layout */
 
 main {
-  display: flex;
+  display: flex 1;
 }
 
 article, section {
@@ -126,10 +126,10 @@ aside a {
   float: left;
 }
 
-/* aside img {
+aside img {
   max-width: 100%;
-} */
+}
 
-footer {
+aside footer {
   margin-top: 10px;
 }
