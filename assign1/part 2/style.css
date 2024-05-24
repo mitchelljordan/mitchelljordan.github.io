@@ -36,7 +36,7 @@ h1 {
 
 h2 {
   font-size: 3rem;
-  text-align: center;
+  text-align: left;
 }
 
 h3 {
@@ -57,7 +57,7 @@ header {
 }
 
 body > * {
-  background-color: rgb(0, 255, 0,0.5);
+  background-color: rgb(35, 243, 35);
   padding: 1%;
 }
 
