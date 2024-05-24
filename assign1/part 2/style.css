@@ -128,7 +128,7 @@ aside a {
 }
 
 aside img {
-  max-width: 100%;
+  max-width: none;
 }
 
 aside footer {
