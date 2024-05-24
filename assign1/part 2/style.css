@@ -98,7 +98,7 @@ nav li {
   flex: 1;
 }
 
-nav a, nav span {
+nav{
   display: inline-block;
   font-size: 2rem;
   height: 3rem;
