@@ -81,24 +81,22 @@ nav {
   height: 50px;
   flex: 100%;
   display: flex;
-  display: inline;
-  text-align: center
 }
 
-nav {
+nav ul {
   padding: 0;
   list-style-type: none;
   flex: 2;
   display: flex;
 }
 
-nav {
+nav li {
   display: inline;
   text-align: center;
   flex: 1;
 }
 
-nav {
+nav a, nav span {
   display: inline-block;
   font-size: 2rem;
   height: 3rem;
