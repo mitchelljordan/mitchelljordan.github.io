@@ -4,12 +4,14 @@ html {
 
 div {
   width: 200px;
-  vertical-align: text-top;
+  height: 200px;
   font-size: 18px;
   background-color: red;
   color: white;
-  text-shadow: black;
-  border-radius: 2px;
+  text-shadow: 2px 2px 2px black;
+  border-radius: 10px;
+  text-align: center;
+  
   
 }
 
