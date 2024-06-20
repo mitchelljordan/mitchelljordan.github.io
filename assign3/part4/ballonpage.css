@@ -54,7 +54,6 @@ body {
     padding: 0;
     gap: 1px;
     display: grid;
-    flex: 4;
     grid-template-columns: 1fr 1fr;
   }
 
