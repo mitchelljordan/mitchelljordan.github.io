@@ -4,14 +4,17 @@ html {
 
 div {
   width: 200px;
-  height: 200px;
-  font-size: 18px;
+  line-height: 200px;
+  font-size: 1rem; /* googled what rem is in px*/
   background-color: red;
+  background: linear-gradient(to bottom right);
   color: white;
   text-shadow: 2px 2px 2px black;
   border-radius: 10px;
   text-align: center;
+  border: 1.5px solid darkred;
   
+
   
 }
 
