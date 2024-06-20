@@ -43,3 +43,41 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+
+html {
+    font-size: 10px;
+}
+
+h1, h2 {
+    letter-spacing: 2px;
+}
+
+h1 {
+   text-align: center;
+   font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    line-height: 13px;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    text-indent: 20px;
+}
+
+a {
+color: #a66;
+outline: none;
+}
+
+a[href^="http"]:after {
+    content: url('OIP.jpg');
+    margin-right: 5px;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
