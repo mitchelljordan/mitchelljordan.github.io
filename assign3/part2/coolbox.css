@@ -1,18 +1,26 @@
+
 html {
   font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
+
+body
 
 div {
   width: 200px;
-  line-height: 200px;
+  line-height: 170px;
   font-size: 1rem; /* googled what rem is in px*/
   background-color: red;
   color: white;
-  text-shadow: 2px 2px 2px black;
+  text-shadow: 1px 1px 1px black;
   border-radius: 10px;
   text-align: center;
   border: 1px solid darkred;
-  background: linear-gradient(to bottom right, transparent 0%, red 30%, red 100%);
+  background: linear-gradient(to bottom right, transparent 0%, red 30%, darkred 100%);
+  box-shadow: 2px 3px 3px black;
+  box-shadow: inset 2px 2px 4px white 0.5, inset -2px -2px -4px black 0.5;
 }
-
-/* Your CSS below here */
