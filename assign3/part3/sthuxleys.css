@@ -82,6 +82,11 @@ a:hover, a:focus {
     text-decoration: none;
 }
 
+a:active{
+    font-style: italic;
+    color: azure;
+}
+
 ul, ol {
     line-height: 13px;
 }
@@ -91,7 +96,6 @@ nav li {
     border-radius: 10px;
     line-height: 40px;
     text-align: center;
-
 }
 
 nav li  {
