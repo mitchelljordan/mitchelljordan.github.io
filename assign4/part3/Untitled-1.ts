@@ -56,7 +56,7 @@ class Ball {
     this.y += this.velY;
   }
 
-   const balls = [];
+   balls = [];
 
 while (balls.length < 25) {
   const size = random(10, 20);
@@ -74,19 +74,4 @@ while (balls.length < 25) {
   balls.push(ball);
 }
 
-function loop() {
-    ctx.fillStyle = "rgb(0 0 0 / 25%)";
-    ctx.fillRect(0, 0, width, height);
-  
-    for (const ball of balls) {
-      ball.draw();
-      ball.update();
-    }
-  
-    requestAnimationFrame(loop);
-  }
-  
-  loop();
-
-  
 }
