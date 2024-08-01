@@ -55,8 +55,9 @@ class Ball {
     this.x += this.velX;
     this.y += this.velY;
   }
+} 
 
-   const balls = [];
+const balls = [];
 
 while (balls.length < 25) {
   const size = random(10, 20);
@@ -86,7 +87,5 @@ function loop() {
     requestAnimationFrame(loop);
   }
   
-  loop();
-
   
-}
+  loop();
