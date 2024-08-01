@@ -22,7 +22,16 @@ for (image of images) {
     });
 }
 /* Wiring up the Darken/Lighten button */
-btn.addEventListener('click', e => {
-
+btn.addEventListener('click', () => {
+    const colour = btn.getAttribute('switch');
+    if (colour === 'dark') {
+        btn.setAttribute('switch', 'light');
+        btn.textContent = 'Lighten';
+        overlay.style.backgroundColor = 'rgba(0,0,0,0.2';
+    } else {
+        btn.setAttribute('switch','dark');
+        btn.textContent = 'Darken';
+        overlay.style.backgroundColor = 'rgba(0,0,0,0)';
+    }
 })
 
