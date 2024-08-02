@@ -1,4 +1,7 @@
 // set up canvas
+const counter = document.querySelector("p")
+let count = 0;
+
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 
@@ -165,7 +168,8 @@ while (balls.length < 25) {
     randomRGB(),
     size,
   );
-
+  count += count;
+  counter.textContent = 'Ball count: ' + count;
   balls.push(ball);
 }
 
