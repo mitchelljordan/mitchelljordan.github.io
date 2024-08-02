@@ -46,13 +46,20 @@ class Ball extends Shape {
 
   // Update the ball's position based on its velocity
   update() {
-    // Check for collision with canvas edges and reverse velocity if needed
-    if (this.x + this.size >= width || this.x - this.size <= 0) {
-      this.velX = -this.velX;
+    if (this.x + this.size >= width) {
+      this.velX = -Math.abs(this.velX);
     }
 
-    if (this.y + this.size >= height || this.y - this.size <= 0) {
-      this.velY = -this.velY;
+    if (this.x - this.size <= 0) {
+      this.velX = Math.abs(this.velX);
+    }
+
+    if (this.y + this.size >= height) {
+      this.velY = -Math.abs(this.velY);
+    }
+
+    if (this.y - this.size <= 0) {
+      this.velY = Math.abs(this.velY);
     }
 
     this.x += this.velX;
@@ -111,19 +118,19 @@ class EvilCircle extends Shape {
   }
 
   checkBounds() {
-    if (this.x + this.size >= width) {
+    if ((this.x + this.size) >= width) {
       this.x -= this.size;
     }
 
-    if (this.x - this.size <= 0) {
+    if ((this.x - this.size) <= 0) {
       this.x += this.size;
     }
 
-    if (this.y + this.size >= height) {
+    if ((this.y + this.size) >= height) {
       this.y -= this.size;
     }
 
-    if (this.y - this.size <= 0) {
+    if ((this.y - this.size) <= 0) {
       this.y += this.size;
     }
   }
@@ -166,15 +173,16 @@ while (balls.length < 25) {
 }
 
 // Create an evil circle
+const size = 25;
 const evilCircle = new EvilCircle(
-  random(0 + size, width - size),
-  random(0 + size, height - size)
+  random(size, width - size),
+  random(size, height - size)
 );
 
 
 function loop() {
 
-  ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
+  ctx.fillStyle = "rgb(0, 0, 0, 0.25)";
   ctx.fillRect(0, 0, width, height);
 
   // Update and draw each ball
