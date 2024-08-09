@@ -20,17 +20,17 @@
 
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Our team</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Blog</a></li>
+        <li><a href="#" tabindex="1">Home</a></li>
+        <li><a href="#" tabindex="2">Our team</a></li>
+        <li><a href="#" tabindex="3">Projects</a></li>
+        <li><a href="#" tabindex="4">Blog</a></li>
       </ul>
 
       <form class="search">
-        <label for="search-input" class="hidden">Search</label>
+        <label for="search-input" class="hidden" tabindex="5">Search</label>
         <input type="search" id="search-input" name="q" placeholder="Search query">
         <label for="go-button" class="hidden">go</label>
-        <input type="submit" value="Go!">
+        <input type="submit" tabindex="6" value="Go!">
       </form>
     </nav>
 
@@ -99,7 +99,7 @@
 
         <p>The following audio clip contains a fact file providing more details about bear mating rituals, along with samples and quotes from experts.</p>
 
-        <audio></audio>
+        <audio controls tabindex="7">
           <source src="media/bear.mp3" type="audio/mp3">
           <source src="media/bear.ogg" type="audio/ogg">
           <p>[a transcipt of what that guy says]</p>
@@ -116,7 +116,7 @@
 
         </aside>
         <section class="comments">
-          <div class="show-hide">Show comments</div>
+          <div class="show-hide" tabindex="8">Show comments</div>
 
           <div class="comment-wrapper">
 
@@ -124,15 +124,15 @@
 
             <form class="comment-form">
               <div class="flex-pair">
-                <label for="name" class="hidden">Your name:</label>
+                <label for="name" class="hidden" tabindex="9">Your name:</label>
                 <input type="text" name="name" id="name" placeholder="Enter your name">
               </div>
               <div class="flex-pair">
-                <label for="comment" class="hidden">Your comment:</label>
+                <label for="comment" class="hidden" tabindex="10">Your comment:</label>
                 <input type="text" name="comment" id="comment" placeholder="Enter your comment">
               </div>
               <div>
-                <input type="submit" value="Submit comment">
+                <input type="submit" value="Submit comment" tabindex="11">
               </div>
             </form>
 
