@@ -5,8 +5,8 @@ const commentWrapper = document.querySelector('.comment-wrapper');
 
 commentWrapper.style.display = 'none';
 
-showHideBtn.onclick = function() {
-  let showHideText = showHideBtn.textContent;
+function commentDropdown(){
+ let showHideText = showHideBtn.textContent;
   if(showHideText === 'Show comments') {
     showHideBtn.textContent = 'Hide comments';
     commentWrapper.style.display = 'block';
@@ -15,6 +15,14 @@ showHideBtn.onclick = function() {
     commentWrapper.style.display = 'none';
   }
 };
+
+showHideBtn.onclick = commentDropdown;
+
+showHideBtn.onkeydown = function(e) {
+  if (e.key === 'Enter'){
+    commentDropdown();
+  }
+}
 
 // functionality for adding a new comment via the comments form
 
