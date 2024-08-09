@@ -27,7 +27,9 @@
       </ul>
 
       <form class="search">
-        <input type="search" name="q" placeholder="Search query">
+        <label for="search-input" class="hidden">Search</label>
+        <input type="search" id="search-input" name="q" placeholder="Search query">
+        <label for="go-button" class="hidden">go</label>
         <input type="submit" value="Go!">
       </form>
     </nav>
@@ -97,16 +99,12 @@
 
         <p>The following audio clip contains a fact file providing more details about bear mating rituals, along with samples and quotes from experts.</p>
 
-        <audio controls aria-labelledby="audioDescription"></audio>
+        <audio></audio>
           <source src="media/bear.mp3" type="audio/mp3">
           <source src="media/bear.ogg" type="audio/ogg">
-          <p>It looks like your browser doesn't support HTML5 audio players. You can download the audio file <a href="bear.mp3"></a></p>
+          <p>[a transcipt of what that guy says]</p>
+          <a href="bear.mp3" download>Download here</a>
         </audio>
-        <p id="audioDescription">an audio description.</p>
-
-        <p>Audio Transcipt</p>
-
-        <p>[an transciptof what that guy says]</p>
 
         <aside>
 
@@ -122,15 +120,15 @@
 
           <div class="comment-wrapper">
 
-            <h2>Add comment</h2>
+            <h3>Add comment</h3>
 
             <form class="comment-form">
               <div class="flex-pair">
-                Your name:
+                <label for="name" class="hidden">Your name:</label>
                 <input type="text" name="name" id="name" placeholder="Enter your name">
               </div>
               <div class="flex-pair">
-                Your comment:
+                <label for="comment" class="hidden">Your comment:</label>
                 <input type="text" name="comment" id="comment" placeholder="Enter your comment">
               </div>
               <div>
@@ -138,7 +136,7 @@
               </div>
             </form>
 
-            <h2>Comments</h2>
+            <h3>Comments</h3>
 
             <ul class="comment-container">
 
